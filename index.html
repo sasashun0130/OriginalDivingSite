@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <p>Scuba Diving</p>
+        <p><a href="#firstview" class="header-title">Scuba Diving</a></p>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -29,12 +29,15 @@
 
     <section id="firstview">
         <h1 class="title">大自然の中で<br><span>非日常を</span></h1>
+        <div class="scroll">
+            <p>scroll</p><span></span>
+        </div>
     </section>
 
     <section class="fuwa" id="about">
         <div class="about-text">
-            <h2 class="about-title">About</h2>
-            <p class="about-p">
+            <h2>About</h2>
+            <p>
                 空気を詰めたタンクを背負い水中で呼吸をしながら<br>
                 水中世界を楽しめるマリンレジャー<br>
                 タンクを背負い海に飛び込む<br>
@@ -48,33 +51,64 @@
     </section>
 
     <section class="fuwa" id="spot">
-        <div class="spot-title">
+
+        <div class="left-title">
             <h2>Spot</h2>
             <h3>ダイビングスポット</h3>   
         </div>
 
-        <div class="spot-left">
-            <div class="spot-coment-back"></div>
+        <div class="spot spot-left">
+            <div class="spot-left-back"></div>
             <img src="images/spot_1.jpg" alt="">
-            <div class="spot-coment">
+            <div class="spot-left-comment">
                 <p>
-                    竹芝からフェリーで２時間。<br>海洋の影響を強く受け気温の寒暖差が小さく、黒潮の流れのため温暖多湿な海洋性気候が特徴。大島名物のウミガメと一緒に泳いでみよう
+                    竹芝からフェリーで２時間。<br>
+                    海洋の影響を強く受け気温の寒暖差が小さく、黒潮の流れのため温暖多湿な海洋性気候が特徴。大島名物のウミガメと一緒に泳いでみよう
                 </p>
             </div>
-            <p class="spot-name">伊豆大島</p>
+            <p class="spot-left-name">伊豆大島</p>
         </div>
 
-        <div>
+        <div class="spot spot-right">
+            <div class="spot-right-back"></div>
+            <img src="images/spot_2.jpg" alt="">
+            <div class="spot-right-comment">
+                <p>
+                    通称IOPは東伊豆にあり、レジャーダイビング発祥の地と言われており、多種多様の海洋生物を見ることが出来ます。ダイナミックな地形もあり初心者も楽しめます。
+                </p>
+            </div>
+            <p class="spot-right-name">伊豆海洋公園</p>
+        </div>
 
+        <div class="spot spot-left" id="spot-left-2">
+            <div class="spot-left-back"></div>
+            <img src="images/spot_3.jpg" alt="">
+            <div class="spot-left-comment">
+                <p>
+                    西伊豆にあり、ダイナミックかつ海洋の安定性があるため、初心者から上級者まで楽しめる。色んな視点で見ることで同じスポットでも楽しさが違ってきます。
+                </p>
+            </div>
+            <p class="spot-left-name">大瀬崎</p>
+        </div>
+
+        <div class="spot spot-right" id="spot-right-2">
+            <div class="spot-right-back"></div>
+            <img src="images/spot_4.JPG" alt="">
+            <div class="spot-right-comment">
+                <p>
+                    海の綺麗さは国内トップクラスを誇る。水中に差し込む太陽光が反射し海面が神秘的な青色に輝く「青の洞窟」はダイバーなら一生に一回は見てみたい神秘的な景色です。
+                </p>
+            </div>
+            <p class="spot-right-name">沖縄・宮古島</p>
         </div>
     </section>
 
     <section class="fuwa" id="licence">
-        <div class="licence-title">
+        <div class="right-title">
             <h2>Licence</h2>
             <h3>ライセンス</h3>   
         </div>
-        <div class="licence-coment">
+        <div class="licence-comment">
             <p>
                 スキューバダイビングでは「Cカード」と呼ばれる<br>
                 ライセンスがあり、ライセンスのランクに応じて<br>
@@ -82,59 +116,69 @@
                 ランクが上がれば上がるほど海の世界が広がっていきます。<br>
                 ライセンスを取って海の世界の可能性を広げよう<br>
             </p>
-            <a href="" class="arrow_right">Licence Flow</a>
+            <div class="licence-arrow">
+                <a href="licence.html" class="arrow_right">Licence Flow</a>
+            </div>
         </div>
     </section>
 
     <section class="fuwa" id="shop">
-        <div class="shop-title">
+        <div class="left-title">
             <h2>Shop</h2>
             <h3>ダイビングショップ</h3>   
         </div>
 
-        <div class="shop-left">
-            <div class="shop">
-                <div class="shop-name">
-                    <h4>Coconut</h4>
+        <div class="shop-contents">
+            <div class="shop-left">
+                <div class="shop">
+                    <div class="shop-name">
+                        <h4>Coconut</h4>
+                    </div>
+                    <p>
+                        関東に拠点を置くダイビングショップ<br>
+                        ココナッツのライセンス取得コースは、<br>
+                        個々のペースに合わせられる少人数制<br>
+                        主なダイビングスポットは伊豆半島全般
+                    </p>
+                    <div class="shop-link">
+                        <a href="https://www.coconut.co.jp/" target="_blank" class="arrow_shop">More</a>
+                    </div>
                 </div>
-                <p>
-                    関東に拠点を置くダイビングショップ<br>
-                    ココナッツのライセンス取得コースは、<br>
-                    個々のペースに合わせられる少人数制<br>
-                    主なダイビングスポットは伊豆半島全般
-                </p>
-                <a href="https://www.coconut.co.jp/" class="arrow_shop">More</a>
             </div>
-        </div>
-        <div class="shop-right">
-            <div class="shop">
-                <div class="shop-name2">
-                    <h4>Dive Kids</h4>
+            <div class="shop-right">
+                <div class="shop">
+                    <div class="shop-name">
+                        <h4>Dive Kids</h4>
+                    </div>
+                    <p>
+                        沖縄宮古島にあるダイビングショップ<br>
+                        コバルトブルーが特徴の宮古島の海で<br>
+                        ライセンスを取得することができます。<br>
+                        ダイブキッズではすべてボートダイビング
+                    </p>
+                    <div class="shop-link">
+                        <a href="http://www.divekids.jp/" target="_blank" class="arrow_shop">More</a>
+                    </div>
                 </div>
-                <p>
-                    沖縄宮古島にあるダイビングショップ<br>
-                    コバルトブルーが特徴の宮古島の海で<br>
-                    ライセンスを取得することができます。<br>
-                    ダイブキッズではすべてボートダイビング
-                </p>
-                <a href="http://www.divekids.jp/" class="arrow_shop">More</a>
             </div>
         </div>
     </section>
 
     <section class="fuwa" id="footer">
-        <div class="footer-box">
-            <span class="footer-title"><a href="#firstview">Scuba Diving</a></span><br>
-            <a href="#about">About</a><br>
-            <a href="#spot">Spot</a><br>
-            <a href="#licence">Licence</a><br>
-            <a href="#shop">Shop</a>
-        </div>
-        <div class="footer-box">
-            <p>
-                <a href="#c-card">C-Card</a><br>
-                <a href="#licence-flow">Licence Flow</a>
-            </p>
+        <div class="footer-wrapper">
+            <div class="footer-box first-footer-box">
+                <a href="#firstview">Scuba Diving</a><br>
+                <a href="#about">About</a><br>
+                <a href="#spot">Spot</a><br>
+                <a href="#licence">Licence</a><br>
+                <a href="#shop">Shop</a>
+            </div>
+            <div class="footer-box second-footer-box">
+                <p>
+                    <a href="#c-card">C-Card</a><br>
+                    <a href="#licence-flow">Licence Flow</a>
+                </p>
+            </div>
         </div>
         <div class="footer-last">
             <p>&copy;2022 Scuba Diving</p>
