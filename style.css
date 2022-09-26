@@ -83,13 +83,36 @@ nav li{
     position: absolute;
     font-size: 48px;
     text-align: left;
-    bottom: 8vw;
-    left: 7vw;
+    bottom: 9vw;
+    left: 8vw;
     font-weight: lighter;
 }
 
 .title span{
-    margin-left: 240px;
+    margin-left: 13vw;
+}
+
+.blur{
+	animation-name:blurAnime;
+	animation-duration: 1.8s;
+	animation-fill-mode:forwards;
+}
+.blurTrigger{
+    opacity: 0;
+}
+
+@keyframes blurAnime{
+    from {
+        filter: blur(10px);
+        transform: scale(1.02);
+        opacity: 0;
+    }
+
+    to {
+        filter: blur(0);
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .scroll{
