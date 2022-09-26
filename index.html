@@ -3,6 +3,8 @@
 <head>
     <title>Scuba Diving</title>
 
+    <link rel="icon" href="images/favicon.ico">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Carter+One&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@1,300&family=Open+Sans:ital,wght@1,500&family=Shippori+Mincho&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+
+    <script src="js/jquery.bgswitcher.js"></script>
+    <script src="js/particles.js-master/particles.js"></script>
+    <script src="js/main.js"></script>
 
     <link rel="stylesheet" href="style.css">
 
@@ -27,16 +36,16 @@
         </nav>
     </header>
 
-    <section id="firstview">
+    <section class="bg-switcher" id="firstview">
         <h1 class="title">大自然の中で<br><span>非日常を</span></h1>
         <div class="scroll">
             <p>scroll</p><span></span>
         </div>
     </section>
 
-    <section class="fuwa" id="about">
-        <div class="about-text">
-            <h2>About</h2>
+    <section id="about">
+        <div class="fuwa about-text">
+            <h2 class="fuwa2">About</h2>
             <p>
                 空気を詰めたタンクを背負い水中で呼吸をしながら<br>
                 水中世界を楽しめるマリンレジャー<br>
@@ -50,14 +59,14 @@
         </div>
     </section>
 
-    <section class="fuwa" id="spot">
+    <section id="spot">
 
-        <div class="left-title">
+        <div class="spot-title left-title">
             <h2>Spot</h2>
             <h3>ダイビングスポット</h3>   
         </div>
 
-        <div class="sp spot-left">
+        <div class="fuwa sp spot-left">
             <div class="spot-left-back"></div>
             <img src="images/spot_1.jpg" alt="">
             <div class="spot-left-comment">
@@ -66,10 +75,10 @@
                     海洋の影響を強く受け気温の寒暖差が小さく、黒潮の流れのため温暖多湿な海洋性気候が特徴。大島名物のウミガメと一緒に泳いでみよう
                 </p>
             </div>
-            <p class="spot-left-name">伊豆大島</p>
+            <p class="fuwa2 spot-left-name">伊豆大島</p>
         </div>
 
-        <div class="sp spot-right">
+        <div class="fuwa sp spot-right">
             <div class="spot-right-back"></div>
             <img src="images/spot_2.jpg" alt="">
             <div class="spot-right-comment">
@@ -77,10 +86,10 @@
                     通称IOPは東伊豆にあり、レジャーダイビング発祥の地と言われており、多種多様の海洋生物を見ることが出来ます。ダイナミックな地形もあり初心者も楽しめます。
                 </p>
             </div>
-            <p class="spot-right-name">伊豆海洋公園</p>
+            <p class="fuwa2 spot-right-name">伊豆海洋公園</p>
         </div>
 
-        <div class="sp spot-left" id="spot-left-2">
+        <div class="fuwa sp spot-left" id="spot-left-2">
             <div class="spot-left-back"></div>
             <img src="images/spot_3.jpg" alt="">
             <div class="spot-left-comment">
@@ -88,10 +97,10 @@
                     西伊豆にあり、ダイナミックかつ海洋の安定性があるため、初心者から上級者まで楽しめる。色んな視点で見ることで同じスポットでも楽しさが違ってきます。
                 </p>
             </div>
-            <p class="spot-left-name">大瀬崎</p>
+            <p class="fuwa2 spot-left-name">大瀬崎</p>
         </div>
 
-        <div class="sp spot-right" id="spot-right-2">
+        <div class="fuwa sp spot-right" id="spot-right-2">
             <div class="spot-right-back"></div>
             <img src="images/spot_4.JPG" alt="">
             <div class="spot-right-comment">
@@ -99,16 +108,16 @@
                     海の綺麗さは国内トップクラスを誇る。水中に差し込む太陽光が反射し海面が神秘的な青色に輝く「青の洞窟」はダイバーなら一生に一回は見てみたい神秘的な景色です。
                 </p>
             </div>
-            <p class="spot-right-name">沖縄・宮古島</p>
+            <p class="fuwa2 spot-right-name">沖縄・宮古島</p>
         </div>
     </section>
 
-    <section class="fuwa" id="licence">
-        <div class="right-title">
+    <section id="licence">
+        <div class="right-title licence-title">
             <h2>Licence</h2>
             <h3>ライセンス</h3>   
         </div>
-        <div class="licence-comment">
+        <div class="fuwa licence-comment">
             <p>
                 スキューバダイビングでは「Cカード」と呼ばれる<br>
                 ライセンスがあり、ライセンスのランクに応じて<br>
@@ -117,21 +126,21 @@
                 ライセンスを取って海の世界の可能性を広げよう<br>
             </p>
             <div class="licence-arrow">
-                <a href="licence.html" class="arrow_right">Licence Flow</a>
+                <a href="licence.html" class="fuwa2 arrow_right">Licence Flow</a>
             </div>
         </div>
     </section>
 
-    <section class="fuwa" id="shop">
-        <div class="left-title">
+    <section id="shop">
+        <div class="shop-title left-title">
             <h2>Shop</h2>
             <h3>ダイビングショップ</h3>   
         </div>
 
-        <div class="shop-contents">
+        <div class="fuwa shop-contents">
             <div class="shop-left">
                 <div class="shop">
-                    <div class="shop-name">
+                    <div class="fuwa2 shop-name">
                         <h4>Coconut</h4>
                     </div>
                     <p>
@@ -145,9 +154,9 @@
                     </div>
                 </div>
             </div>
-            <div class="shop-right">
+            <div class="fuwa shop-right">
                 <div class="shop">
-                    <div class="shop-name">
+                    <div class="fuwa2 shop-name">
                         <h4>Dive Kids</h4>
                     </div>
                     <p>
@@ -164,8 +173,8 @@
         </div>
     </section>
 
-    <section class="fuwa" id="footer">
-        <div class="footer-wrapper">
+    <section id="footer">
+        <div class="fuwa footer-wrapper">
             <div class="footer-box first-footer-box">
                 <a href="#firstview">Scuba Diving</a><br>
                 <a href="#about">About</a><br>

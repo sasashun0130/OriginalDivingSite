@@ -21,8 +21,8 @@ header{
 }
 
 .header-title{
-    margin-left: 50px;
-    font-size: 24px;
+    margin-left: 4vw;
+    font-size: 22px;
     color: #ffffff;
     text-decoration: none;
     transition: 0.5s;
@@ -41,8 +41,8 @@ nav a {
     text-align: right;
     text-decoration: none;
     position: relative;
-    font-size:20px;
-    margin: 0 20px;
+    font-size: 18px;
+    margin: 0 2vw;
 }
 
 nav a::after {
@@ -70,7 +70,7 @@ nav li{
     list-style: none;
 }
 
-#firstview{
+.bg-switcher{
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) ,url(images/header4.JPG);
     width: 100vw;
     height: 100vh;
@@ -81,10 +81,10 @@ nav li{
 
 .title{
     position: absolute;
-    font-size: 60px;
+    font-size: 48px;
     text-align: left;
-    bottom: 100px;
-    left: 80px;
+    bottom: 8vw;
+    left: 7vw;
     font-weight: lighter;
 }
 
@@ -93,20 +93,20 @@ nav li{
 }
 
 .scroll{
-    font-size: 24px;
+    font-size: 18px;
     position: absolute;
     transform:rotate(90deg);
     bottom: 10vw;
-    right: 5vw;
+    right: 4vw;
 }
 
 .scroll span{
     display: inline-block;
     width: 20vw;
-    border-bottom: solid 2px #ffffff;
+    border-bottom: solid 1.5px #ffffff;
     position: relative;
-    bottom: 35px;
-    left: 80px;
+    bottom: 2vw;
+    left: 55px;
 }
 
 #about{
@@ -126,14 +126,14 @@ nav li{
 }
 
 .about-text h2 {
-    font-size: 36px;
+    font-size: 32px;
     border-bottom: solid 1px #fff;
-
+    font-weight: lighter;
 }
 
 .about-text p {
     padding-top: 80px;
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 64px;
 }
 
@@ -143,17 +143,21 @@ nav li{
 }
 
 .left-title h2{
-    font-size: 250px;
+    font-size: 200px;
     color: #0F3653;
 }
 
 .left-title h3{
     width: fit-content;
-    font-size: 32px;
+    font-size: 24px;
     color: #ffffff;
     position: relative;
-    top: -75px;
-    left: 120px;
+}
+
+.spot-title h3{
+    top: -3vw;
+    left: 8vw;
+    font-weight: lighter;
 }
 
 .sp {
@@ -161,7 +165,7 @@ nav li{
     width: 100%;
     color: white;
     display: flex;
-    padding-bottom: 30vw;
+    padding-bottom: 25vw;
 }
 
 .spot-right {
@@ -170,26 +174,28 @@ nav li{
 
 .spot-left-back {
     position: absolute;
-    width: 70%;
-    height: calc(100vw * 0.35);
+    width: 64vw;
+    height: 25vw;
+    /* height: calc(100vw * 0.35); */
     border: solid 1px #FFAB1A;
-    right: 3vw;
+    right: 15vw;
     top: 10vw;
     z-index: 0;
 }
 
 .spot-right-back {
     position: absolute;
-    width: 70%;
-    height: calc(100vw * 0.35);
+    width: 64vw;
+    height: 25vw;
+    /* height: calc(100vw * 0.35); */
     border: solid 1px #FFAB1A;
-    left: 3vw;
+    left: 15vw;
     top: 10vw;
     z-index: 0;
 }
 
 .spot-left img, .spot-right img {
-    width: 64%;
+    width: 55%;
     position: relative;
     z-index: 2;
 }
@@ -200,9 +206,10 @@ nav li{
     justify-content: center;
     align-items: center;
     top: 5vw;
-    right: 6vw;
-    width: 40%;
-    height: calc(100vw * 0.35);
+    right: 18vw;
+    width: 30vw;
+    height: 28vw;
+    /* height: calc(100vw * 0.35); */
     background-color: #015BA0;
     z-index: 4;
 }
@@ -213,9 +220,10 @@ nav li{
     justify-content: center;
     align-items: center;
     top: 5vw;
-    left: 6vw;
-    width: 40%;
-    height: calc(100vw * 0.35);
+    left: 18vw;
+    width: 30vw;
+    height: 28vw;
+    /* height: calc(100vw * 0.35); */
     background-color: #015BA0;
     z-index: 4;
 }
@@ -223,26 +231,26 @@ nav li{
 .spot-right-comment p, .spot-left-comment p {
     width: 60%;
     line-height: 3rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .spot-left-name {
     position: absolute;
-    top: -66px;
-    right: 8vw;
+    top: -2.5vw;
+    right: 20vw;
     writing-mode: vertical-rl;
     letter-spacing: 1rem;
-    font-size: 48px;
+    font-size: 44px;
     z-index: 6;
 }
 
 .spot-right-name {
     position: absolute;
-    top: -66px;
-    left: 8vw;
+    top: -6.5vw;
+    left: 18.5vw;
     writing-mode: vertical-rl;
     letter-spacing: 1rem;
-    font-size: 48px;
+    font-size: 44px;
     z-index: 6;
 }
 
@@ -259,7 +267,7 @@ nav li{
 }
 
 .right-title h2{
-    font-size: 250px;
+    font-size: 200px;
     color:  #042D4D;
 }
 
@@ -267,12 +275,16 @@ nav li{
     font-size: 32px;
     color: #ffffff;
     position: relative;
-    top: -80px;
-    right: 350px;
+    font-weight: lighter;
+}
+
+.licence-title h3{
+    top: -6vw;
+    right: 20vw;
 }
 
 .licence-comment{
-    height: 600px;
+    height: 38vw;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(images/licence.png);
     background-size: cover;
     display: flex;
@@ -287,7 +299,7 @@ nav li{
 .licence-comment p{
     color: #ffffff;
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 64px;
     letter-spacing: 0.3em;
     padding-top: 135px;
@@ -296,14 +308,14 @@ nav li{
 
 .licence-comment a{
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     letter-spacing: 0.1em;
     transition: 0.5s;
 }
 
 .licence-comment a:hover{
-    font-size: 22px;
+    font-size: 20px;
     color: #FFAB1A;
 }
 
@@ -339,32 +351,35 @@ nav li{
 }
 
 #shop{
-    height: 1450px;
+    /* height: 1450px; */
+    width: 100%;
     background-color: #042D4D;
 }
 
-.shop-title h2{
-    font-size: 250px;
-    color: #0F3653;
-}
-
 .shop-title h3{
-    font-size: 28px;
-    color: #ffffff;
-    position: relative;
-    top: -75px;
-    left: 180px;
+    top: -4vw;
+    left: 9vw;
 }
 
 .shop-contents {
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 15vw;
+    padding-top: 3vw;
 }
 
 .shop-name{
     width: 100%;
-    padding-top: 20px;
+    margin-top: 3vw;
+}
+
+.shop-name h4 {
+    font-size: 28px;
+    width: fit-content;
+    margin-left: 5vw;
+    border-bottom: solid 1.5px #FFAB1A;
+    font-weight: lighter;
 }
 
 .shop-left{
@@ -390,13 +405,6 @@ nav li{
     background-color: #032743;
 }
 
-.shop h4{
-    font-size: 36px;
-    width: fit-content;
-    margin-left: 3vw;
-    border-bottom: solid 1.5px #FFAB1A;
-
-}
 
 .shop p{
     font-size: 18px;
@@ -513,15 +521,20 @@ nav li{
     padding-bottom: 10vw;
 }
 
+.c-card-title h3{
+    top: -5vw;
+    right: 15vw;
+}
+
 .c-card-comment{
     padding-right: 15vw;
 }
 
 .c-card-comment p{
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     text-align: right;
-    line-height: 64px;
+    line-height: 4em;
 }
 
 #licence-flow{
@@ -537,12 +550,13 @@ nav li{
     display: flex;
 }
 
-.licence-title h2{
-    font-size: 180px;
+.licenceflow-title h2{
+    font-size: 150px;
 }
 
-.licence-title h3{
-    left: 30vw;
+.licenceflow-title h3{
+    top: -4vw;
+    left: 25vw;
 }
 
 .flow-right {
@@ -550,8 +564,8 @@ nav li{
 }
 
 .flow img {
-    width: 81vw;
-    height: 27vw;
+    width: 75vw;
+    height: 25vw;
     object-fit: cover;
     object-position: 0% 100%;
     position: relative;
@@ -564,14 +578,13 @@ nav li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 6vw;
-    right: 8vw;
-    width: 35%;
-    /* height: 35%; */
+    top: 8vw;
+    right: 12vw;
+    width: 38%;
     background-color: #023E8A;
     z-index: 4;
     box-shadow: #011F45;
-    box-shadow: 2vw 2vw 0 0 rgba(1, 31, 69, 1);
+    box-shadow: 1.5vw 1.5vw 0 0 rgba(1, 31, 69, 1);
 }
 
 .flow-right-comment{
@@ -580,20 +593,21 @@ nav li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 6vw;
-    left: 8vw;
-    width: 35%;
+    top: 8vw;
+    left: 12vw;
+    width: 38%;
     /* height: 35%; */
     background-color: #023E8A;
     z-index: 4;
-    box-shadow: -2vw 2vw 0 0 rgba(1, 31, 69, 1);
+    box-shadow: -1.5vw 1.5vw 0 0 rgba(1, 31, 69, 1);
 }
 
 .flow-left-comment h4 ,.flow-right-comment h4{
     width: 100%;
-    font-size: 36px;
+    font-size: 32px;
     text-align: center;
     margin-top: 2vw;
+    font-weight: lighter;
 }
 
 .flow-left-comment p ,.flow-right-comment p{
@@ -601,6 +615,41 @@ nav li{
     width: 60%;
     margin: 3vw 0;
     line-height: 3rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
+.fuwatAnime {
+    -webkit-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-duration:1.5s;
+    -ms-animation-duration:1.5s;
+    animation-duration:1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+}
+
+.fuwatAnime2 {
+    -webkit-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-duration:2.3s;
+    -ms-animation-duration:2.3s;
+    animation-duration:2.3s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime {
+    0% { opacity: 0; -webkit-transform: translateY(-20px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+
+@keyframes fuwatAnime {
+    0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}

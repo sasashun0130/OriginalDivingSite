@@ -3,6 +3,8 @@
 <head>
     <title>Scuba Diving</title>
 
+    <link rel="icon" href="images/favicon.ico">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Carter+One&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@1,300&family=Open+Sans:ital,wght@1,500&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+
+    <script src="js/jquery.bgswitcher.js"></script>
+    <script src="js/particles.js-master/particles.js"></script>
+    <script src="js/main.js"></script>
 
     <link rel="stylesheet" href="style.css">
 
@@ -25,7 +34,7 @@
         </nav>
     </header>
 
-    <section id="firstview">
+    <section class="bg-switcher" id="firstview">
         <h1 class="title">海の中は<br><span>大人の世界</span></h1>
         <div class="scroll">
             <p>scroll</p><span></span>
@@ -33,13 +42,13 @@
     </section>
 
     <section class="fuwa" id="c-card">
-        <div class="right-title">
+        <div class="right-title c-card-title">
             <h2>C-Card</h2>
             <h3>Cカード</h3>   
         </div>
         <div class="c-card-comment">
             <p>
-                Cカードとはライセンスのことで通常ダイビングライセンスと呼ばれる。<br>
+                Cカードとはライセンスのことで通常「ダイビングライセンス」と呼ばれる。<br>
                 主にPADI・NAUIの2つの団体から発行され、スキルや経験本数に応じてランク付けされる。<br>
                 ライセンスが高いほど海の中での楽しみも増える。<br>
             </p>
@@ -47,7 +56,7 @@
     </section>
 
     <section class="fuwa" id="licence-flow">
-        <div class="left-title licence-title" >
+        <div class="left-title licenceflow-title" >
             <h2>Licence Flow</h2>
             <h3>ライセンスフロー</h3>   
         </div>
@@ -55,7 +64,7 @@
         <div class="flow flow-left">
             <img src="images/licenceflow_1.JPG" alt="">
             <div class="flow-left-comment">
-                <h4>１-ショップを見つける</h4>
+                <h4>1.ショップを見つける</h4>
                 <p>初心者に取ってライセンスを取得するショップ選びは大切です。安心安全にかつ丁寧に指導してくれるショップを選びましょう。</p>
             </div>
         </div>
@@ -63,7 +72,7 @@
         <div class="flow flow-right">
             <img src="images/licenceflow_2.jpg" alt="">
             <div class="flow-right-comment">
-                <h4>２-学科講習</h4>
+                <h4>2.学科講習</h4>
                 <p>ビデオや教材を利用して、ダイビングに必要な知識を深めていきます。最後に簡単なテストを行い知識の見直しをしていきます。</p>
             </div>
         </div>
@@ -71,7 +80,7 @@
         <div class="flow flow-left">
             <img src="images/licenceflow_3.jpg" alt="">
             <div class="flow-left-comment">
-                <h4>３-プール講習</h4>
+                <h4>3.プール講習</h4>
                 <p>講習で習ったことを水中で実践し、水中の世界を体験。水中で呼吸ができることに感動、無重力の世界で自由に動けることに感動します</p>
             </div>
         </div>
@@ -79,7 +88,7 @@
         <div class="flow flow-right">
             <img src="images/licenceflow_4.jpg" alt="">
             <div class="flow-right-comment">
-                <h4>４-海洋実習</h4>
+                <h4>4.海洋実習</h4>
                 <p>プールで学んだ知識とスキルを実際の海で試し、魚を見ながらじっくり海に慣れていきます。海の中の新しい世界に感動です</p>
             </div>
         </div>
@@ -87,7 +96,7 @@
         <div class="flow flow-left">
             <img src="images/licenceflow_5.JPG" alt="">
             <div class="flow-left-comment">
-                <h4>５-認定</h4>
+                <h4>5.認定</h4>
                 <p>講習を経て海の中での基本的動作ができるようになったら無事ライセンス認定です。新しい世界への冒険の始まりです。</p>
             </div>
         </div>
