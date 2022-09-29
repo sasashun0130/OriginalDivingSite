@@ -54,13 +54,42 @@ function BlurTextAnimeControl() {
 		var scroll = $(window).scrollTop();
 		var windowHeight = $(window).height();
 		if (scroll >= elemPos - windowHeight){
-		$(this).addClass('blur');// 画面内に入ったらblurというクラス名を追記
-		}else{
-		$(this).removeClass('blur');// 画面外に出たらblurというクラス名を外す
+		    $(this).addClass('blur');// 画面内に入ったらblurというクラス名を追記
+		}
+        else{
+		    $(this).removeClass('blur');// 画面外に出たらblurというクラス名を外す
+		}
+		});
+}
+
+function TextAnimeControl() {
+	$('.headerTrigger').each(function(){ //blurTriggerというクラス名が
+
+        const header = document.getElementById("stopheader");
+        header.style.opacity = 1;
+
+		var elemPos = $(this).offset().top-50;//要素より、50px上の
+		var scroll = $(window).scrollTop();
+		var windowHeight = $(window).height();
+		if (scroll >= elemPos - windowHeight){
+		    $(this).addClass('blur');// 画面内に入ったらblurというクラス名を追記
+		}
+        else{
+		    $(this).removeClass('blur');// 画面外に出たらblurというクラス名を外す
 		}
 		});
 }
 
 $(window).on('load', function () {
 	BlurTextAnimeControl();
+
+    window.setTimeout(TextAnimeControl,5000);  //headerだけ5秒間遅れて表示
 });
+
+// window.addEventListener("scroll", function () {
+//     const topBtn = document.getElementById("stopheader");
+//     const scroll = window.pageYOffset;
+//     if (scroll > 840) { 
+//       topBtn.style.opacity = 1;
+//     } else topBtn.style.opacity = 0; 
+// });
