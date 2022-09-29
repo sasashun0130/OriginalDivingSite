@@ -685,13 +685,12 @@ nav li{
 @media all and (max-width:480px){
 
     header{
-        height: 10vw;
-
+        height: 12vw;
     }
     
     .header-title{
-        margin-left: 4vw;
-        font-size: 10px;
+        margin-left: 5vw;
+        font-size: 11px;
         color: #ffffff;
         text-decoration: none;
         transition: 0.5s;
@@ -702,7 +701,7 @@ nav li{
     }
     
     nav {
-        margin-right: 0;
+        margin-right: 15px;
     }
     
     nav a {
@@ -711,7 +710,11 @@ nav li{
         text-decoration: none;
         position: relative;
         font-size: 10px;
-        margin: 0 2vw;
+        margin: 0 2.5vw;
+    }
+
+    nav a::after{
+        height: 1px;
     }
 
     .bg-switcher{
@@ -772,13 +775,13 @@ nav li{
     
     .about-text h2 {
         font-size: 24px;
-        border-bottom: solid 1px #fff;
+        border-bottom: solid 0.8px #fff;
         font-weight: lighter;
     }
     
     .about-text p {
         padding-top: 50px;
-        line-height: 56px;
+        line-height: 50px;
     }
 
     #spot{
@@ -808,14 +811,14 @@ nav li{
     }
 
     .spot-title h2{
-        left:-30vw;
+        right: 0;
     }
     
     .spot-title h3{
         top: -3vw;
-        left: -30vw;
+        left: 0;
         font-weight: lighter;
-        font-size: 14px;
+        font-size: 12px;
     }
     
     .sp {
@@ -823,7 +826,7 @@ nav li{
         width: 100%;
         color: white;
         display: flex;
-        padding-bottom: 80vw;
+        padding-bottom: 70vw;
     }
     
     .spot-left-back {
@@ -896,11 +899,11 @@ nav li{
     
     .spot-right-name {
         position: absolute;
-        top: 58vw;
-        left: 17vw;
+        top: 53vw;
+        left: 18vw;
         writing-mode: vertical-rl;
         letter-spacing: 0.8rem;
-        font-size: 24px;
+        font-size: 20px;
         z-index: 6;
     }
     
