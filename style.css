@@ -10,7 +10,7 @@ body {
 }
 
 header{
-    height: 6vw;
+    height: 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
