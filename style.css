@@ -10,7 +10,7 @@ body {
 }
 
 header{
-    height: 10vw;
+    height: 6vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -165,6 +165,10 @@ nav li{
 #spot{
     width: 100%;
     background-color: #042D4D;
+}
+
+#spot-sp{
+    display: none;
 }
 
 .left-title h2{
@@ -679,8 +683,10 @@ nav li{
 }
 
 @media all and (max-width:480px){
+
     header{
-        opacity: 0;
+        height: 10vw;
+
     }
     
     .header-title{
@@ -735,7 +741,7 @@ nav li{
         font-size: 18px;
         position: absolute;
         transform:rotate(90deg);
-        bottom: 10vw;
+        bottom: 20vw;
         right: 2vw;
     }
     
@@ -755,13 +761,13 @@ nav li{
         display: flex;
         justify-content: end;
         align-items: center;
-        padding-right: 80px;
+        padding-right: 40px;
     }
     
     .about-text{
         color: #ffffff;
         text-align: right;
-        width: 85%;
+        width: 88%;
     }
     
     .about-text h2 {
@@ -774,10 +780,19 @@ nav li{
         padding-top: 50px;
         line-height: 56px;
     }
-    
+
     #spot{
+        display: none;
+    }
+
+    #spot-sp{
+        display: block;
+        display: flex;
+        flex-direction: column;
         width: 100%;
         background-color: #042D4D;
+        justify-content: center;
+        align-items: center;
     }
     
     .left-title h2{
@@ -791,12 +806,16 @@ nav li{
         color: #ffffff;
         position: relative;
     }
+
+    .spot-title h2{
+        left:-30vw;
+    }
     
     .spot-title h3{
         top: -3vw;
-        left: 3vw;
+        left: -30vw;
         font-weight: lighter;
-        font-size: 20px;
+        font-size: 14px;
     }
     
     .sp {
@@ -804,37 +823,34 @@ nav li{
         width: 100%;
         color: white;
         display: flex;
-        padding-bottom: 25vw;
-    }
-    
-    .spot-right {
-        justify-content: end;
+        padding-bottom: 80vw;
     }
     
     .spot-left-back {
         position: absolute;
-        width: 64vw;
-        height: 25vw;
+        width: 70vw;
+        height: 40vw;
         border: solid 1px #FFAB1A;
-        right: 15vw;
-        top: 10vw;
+        top: 38vw;
         z-index: 0;
     }
     
     .spot-right-back {
         position: absolute;
-        width: 64vw;
-        height: 25vw;
+        width: 70vw;
+        height: 40vw;
         border: solid 1px #FFAB1A;
-        left: 15vw;
-        top: 10vw;
+        top: 38vw;
         z-index: 0;
     }
     
     .spot-left img, .spot-right img {
+        display: flex;
         width: 80%;
         position: relative;
         z-index: 2;
+        display: block;
+        margin: 0 auto;
     }
     
     .spot-left-comment {
@@ -842,13 +858,11 @@ nav li{
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 5vw;
-        right: 18vw;
-        width: 30vw;
-        height: 28vw;
-        /* height: calc(100vw * 0.35); */
+        top: 35vw;
+        width: 75vw;
+        height: 40vw;
         background-color: #015BA0;
-        z-index: 4;
+        z-index: 0;
     }
     
     .spot-right-comment {
@@ -856,38 +870,37 @@ nav li{
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 5vw;
-        left: 18vw;
-        width: 30vw;
-        height: 28vw;
-        /* height: calc(100vw * 0.35); */
+        top: 35vw;
+        width: 75vw;
+        height: 40vw;
         background-color: #015BA0;
-        z-index: 4;
+        z-index: 0;
     }
     
     .spot-right-comment p, .spot-left-comment p {
-        width: 60%;
-        line-height: 3rem;
-        font-size: 1rem;
+        padding-top: 30px;
+        width: 80%;
+        line-height: 1rem;
+        font-size: 0.5rem;
     }
     
     .spot-left-name {
         position: absolute;
-        top: -2.5vw;
-        right: 20vw;
+        top: 58vw;
+        right: 17vw;
         writing-mode: vertical-rl;
-        letter-spacing: 1rem;
-        font-size: 44px;
+        letter-spacing: 0.8rem;
+        font-size: 24px;
         z-index: 6;
     }
     
     .spot-right-name {
         position: absolute;
-        top: -6.5vw;
-        left: 18.5vw;
+        top: 58vw;
+        left: 17vw;
         writing-mode: vertical-rl;
-        letter-spacing: 1rem;
-        font-size: 44px;
+        letter-spacing: 0.8rem;
+        font-size: 24px;
         z-index: 6;
     }
     
@@ -904,12 +917,12 @@ nav li{
     }
     
     .right-title h2{
-        font-size: 200px;
+        font-size: 56px;
         color:  #042D4D;
     }
     
     .right-title h3{
-        font-size: 32px;
+        font-size: 12px;
         color: #ffffff;
         position: relative;
         font-weight: lighter;
@@ -921,57 +934,61 @@ nav li{
     }
     
     .licence-comment{
-        height: 38vw;
+        height: 75vw;
         background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(images/licence.png);
         background-size: cover;
         display: flex;
         flex-direction: column;
+        position: relative;
     }
     
     .licence-arrow{
         display: flex;
         justify-content: center;
+        position: relative;
+        left: 20vw;
     }
     
     .licence-comment p{
         color: #ffffff;
-        text-align: left;
-        font-size: 18px;
-        line-height: 64px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.2em;
         letter-spacing: 0.3em;
-        padding-top: 135px;
-        padding-left: 100px;
+        padding-top: 70px;
+        padding-left: 45px;
+        padding-right: 45px;
     }
+    
     
     .licence-comment a{
         color: #ffffff;
-        font-size: 18px;
+        font-size: 14px;
         text-decoration: none;
         letter-spacing: 0.1em;
         transition: 0.5s;
     }
     
     .licence-comment a:hover{
-        font-size: 20px;
+        font-size: 16px;
         color: #FFAB1A;
     }
     
     .arrow_right {
         position: relative;
-        padding-left: 25px;
     }
     
     .arrow_right::before { /* くの字の表示設定 */
         content: "";
         margin: auto;
         position: absolute;
-        top: 28.3px;
+        top: 28px;
         bottom: 0;
-        left: 183px;
+        left: 134px;
         width: 10px;    /* くの字を山なりに見た時、左側の長さ */
         height: 10px;   /* くの字を山なりに見た時、右側の長さ */
-        border-top: 2px solid #FFAB1A;     /* くの字を山なりに見た時、左側の太さと色 */
-        border-right: 2px solid #FFAB1A;   /* くの字を山なりに見た時、右側の太さと色 */
+        border-top: 1px solid #FFAB1A;     /* くの字を山なりに見た時、左側の太さと色 */
+        border-right: 1px solid #FFAB1A;   /* くの字を山なりに見た時、右側の太さと色 */
         transform: rotate(45deg);    /* くの字の向き */
       }
     
@@ -982,19 +999,20 @@ nav li{
         top: 28px;
         bottom: 0;
         left: 25px;
-        width: 170px; /* 棒の長さ */
-        height: 2px; /* 棒の太さ */
+        width: 120px; /* 棒の長さ */
+        height: 1px; /* 棒の太さ */
         background: #FFAB1A;  /* 棒の色 */
     }
     
     #shop{
         width: 100%;
         background-color: #042D4D;
+        align-items: center;
     }
     
     .shop-title h3{
         top: -4vw;
-        left: 9vw;
+        left: 4vw;
     }
     
     .shop-contents {
@@ -1011,7 +1029,7 @@ nav li{
     }
     
     .shop-name h4 {
-        font-size: 28px;
+        font-size: 18px;
         width: fit-content;
         margin-left: 5vw;
         border-bottom: solid 1.5px #FFAB1A;
@@ -1021,20 +1039,24 @@ nav li{
     .shop-left{
         display: flex;
         width: 100%;
-        height: 405px;
+        height: 225px;
         color: #ffffff;
+        justify-content: center;
+        padding-bottom: 50px;
     }
     
     .shop-right{
         display: flex;
         justify-content: end;
         width: 100%;
-        height: 405px;
+        height: 225px;
         color: #ffffff;
+        justify-content: center;
+        padding-bottom: 50px;
     }
     
     .shop {
-        width: 50%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1043,10 +1065,10 @@ nav li{
     
     
     .shop p{
-        font-size: 18px;
-        line-height: 50px;
-        letter-spacing: 0.3em;
-        margin-top: 3vw;
+        font-size: 14px;
+        line-height: 1.3em;
+        letter-spacing: 0.2em;
+        margin-top: 8vw;
     }
     
     .shop a{
@@ -1054,14 +1076,14 @@ nav li{
         text-decoration: none;
         font-size: 18px;
         transition: 0.5s;
-        margin-right: 5vw;
+        margin-right: 10vw;
     }
     
     .shop-link {
         width: 100%;
         display: flex;
         justify-content: end;
-        padding-top: 0vw;
+        padding-top: 3vw;
     }
     
     .shop a:hover{
@@ -1076,22 +1098,22 @@ nav li{
     .arrow_shop::before {
         content: "";
         position: absolute;
-        right: -1vw;
-        bottom: -1vw;
+        right: -6vw;
+        bottom: -2vw;
         width: 10px;
         height: 10px;
-        border-top: 2px solid #FFAB1A;
-        border-right: 2px solid #FFAB1A;
+        border-top: 1.5px solid #FFAB1A;
+        border-right: 1.5px solid #FFAB1A;
         transform: rotate(45deg);
     }
     
     .arrow_shop::after {
         content: "";
         position: absolute;
-        right: -1vw;
-        bottom: calc(-1vw + 5px);
+        right: -6vw;
+        bottom: calc(-2vw + 5px);
         width: 80px;
-        height: 2px;
+        height: 1.5px;
         background: #FFAB1A;
     }
     
@@ -1114,12 +1136,12 @@ nav li{
     
     .footer-box{
         border-left: solid 1.5px #FFAB1A;
-        margin-right: 150px;
-        padding-left: 20px;
+        margin-right: 80px;
+        padding-left: 15px;
     }
     
     .footer-box a{
-        font-size: 18px;
+        font-size: 16px;
         text-decoration: none;
         color: #ffffff;
         letter-spacing: 0.1em;
@@ -1131,7 +1153,7 @@ nav li{
     .first-footer-box a:nth-child(1){
         margin: 0;
         display: inline-block;
-        font-size: 24px;
+        font-size: 5px;
     }
     
     .second-footer-box{
@@ -1144,7 +1166,7 @@ nav li{
     }
     
     .footer-last{
-        font-size: 12px;
+        font-size: 6px;
         display: flex;
         justify-content: center;
         margin-top: 60px;
@@ -1159,7 +1181,7 @@ nav li{
     
     .c-card-title h3{
         top: -5vw;
-        right: 15vw;
+        right: 12vw;
     }
     
     .c-card-comment{
@@ -1168,9 +1190,10 @@ nav li{
     
     .c-card-comment p{
         color: #ffffff;
-        font-size: 18px;
-        text-align: right;
+        font-size: 14px;
+        text-align: center;
         line-height: 4em;
+        padding-left: 15vw;
     }
     
     #licence-flow{
@@ -1181,13 +1204,13 @@ nav li{
     
     .flow {
         position: relative;
-        margin-bottom: 20vw;
+        margin-bottom: 35vw;
         margin-top: 5vw;
         display: flex;
     }
     
     .licenceflow-title h2{
-        font-size: 150px;
+        font-size: 45px;
     }
     
     .licenceflow-title h3{
@@ -1216,7 +1239,7 @@ nav li{
         align-items: center;
         top: 8vw;
         right: 12vw;
-        width: 38%;
+        width: 45%;
         background-color: #023E8A;
         z-index: 4;
         box-shadow: #011F45;
@@ -1231,8 +1254,7 @@ nav li{
         align-items: center;
         top: 8vw;
         left: 12vw;
-        width: 38%;
-        /* height: 35%; */
+        width: 45%;
         background-color: #023E8A;
         z-index: 4;
         box-shadow: -1.5vw 1.5vw 0 0 rgba(1, 31, 69, 1);
@@ -1240,7 +1262,7 @@ nav li{
     
     .flow-left-comment h4 ,.flow-right-comment h4{
         width: 100%;
-        font-size: 32px;
+        font-size: 16px;
         text-align: center;
         margin-top: 2vw;
         font-weight: lighter;
@@ -1248,10 +1270,10 @@ nav li{
     
     .flow-left-comment p ,.flow-right-comment p{
         display: flex;
-        width: 60%;
+        width: 70%;
         margin: 3vw 0;
-        line-height: 3rem;
-        font-size: 1rem;
+        line-height: 1rem;
+        font-size: 0.5rem;
     }
     
     .fuwatAnime {
