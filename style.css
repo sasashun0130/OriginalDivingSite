@@ -9,7 +9,7 @@ body {
     width: 100vw;
 }
 
-header{
+.headerTrigger{
     height: 5vw;
     display: flex;
     justify-content: space-between;
@@ -19,6 +19,13 @@ header{
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
     opacity: 0;
+}
+
+#sp-header{
+    display: none;
+}
+.sp-btn{
+    display: none;
 }
 
 .header-title{
@@ -684,6 +691,10 @@ nav li{
 
 @media all and (max-width:480px){
 
+    #licence{
+        overflow: hidden;
+    }
+
     header{
         height: 12vw;
     }
@@ -717,6 +728,115 @@ nav li{
         height: 1px;
     }
 
+
+    #sp-header{
+        width:100%;
+        background:#333;
+        color:#fff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /*========= ナビゲーションのためのCSS ===============*/
+
+    /* #g-nav{
+        
+        position:fixed;
+        z-index: 999;
+        top:0;
+        right: -120%;
+        width:100%;
+        height: 100vh;
+        background:#999;
+
+        transition: all 0.6s;
+    } */
+
+    /*アクティブクラスがついたら位置を0に*/
+    /* #g-nav.panelactive{
+        right: 0;
+    } */
+
+    /*ナビゲーション*/
+    /* #g-nav ul {
+
+        position: absolute;
+        z-index: 999;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    } */
+
+    /*リストのレイアウト設定*/
+
+    /* #g-nav li{
+        list-style: none;
+        text-align: center;
+    }
+
+    #g-nav li a{
+        color: #333;
+        text-decoration: none;
+        padding:10px;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+    } */
+
+    /*========= ボタンのためのCSS ===============*/
+    /* .openbtn{
+        position:fixed;
+        z-index: 9999;
+        top:10px;
+        right: 10px;
+        cursor: pointer;
+        width: 50px;
+        height:50px;
+    } */
+        
+    /*×に変化*/	
+    /* .openbtn span{
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #666;
+        width: 45%;
+    }
+
+    .openbtn span:nth-of-type(1) {
+        top:15px;	
+    }
+
+    .openbtn span:nth-of-type(2) {
+        top:23px;
+    }
+
+    .openbtn span:nth-of-type(3) {
+        top:31px;
+    }
+
+    .openbtn.active span:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }
+
+    .openbtn.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .openbtn.active span:nth-of-type(3){
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    } */
+
     .bg-switcher{
         background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) ,url(images/header4.JPG);
         width: 100vw;
@@ -737,7 +857,7 @@ nav li{
     }
 
     .title span{
-        bottom: 15vw;
+        padding-top: 20vh;
     }
     
     .scroll{
@@ -811,12 +931,12 @@ nav li{
     }
 
     .spot-title h2{
-        right: 0;
+        padding-right: 70vw;
     }
     
     .spot-title h3{
         top: -3vw;
-        left: 0;
+        left: 1vw;
         font-weight: lighter;
         font-size: 12px;
     }
@@ -1139,24 +1259,24 @@ nav li{
     
     .footer-box{
         border-left: solid 1.5px #FFAB1A;
-        margin-right: 80px;
+        margin-right: 35px;
         padding-left: 15px;
     }
     
     .footer-box a{
-        font-size: 16px;
+        font-size: 14px;
         text-decoration: none;
         color: #ffffff;
         letter-spacing: 0.1em;
-        line-height: 0;
+        line-height: 0.3em;
         margin: 46px 0 0 0;
         display: inline-block;
     }
-    
+
     .first-footer-box a:nth-child(1){
         margin: 0;
         display: inline-block;
-        font-size: 5px;
+        font-size: 6px;
     }
     
     .second-footer-box{
