@@ -87,7 +87,7 @@ $(window).on('load', function () {
 });
 
 var openNav = function(){
-    $(".ip-nav").css("display", "flex");
+    $(".ip-nav").css("left", "0vw");
     $("#nav-hidden").attr("id", "nav-open");
 }
 
@@ -95,11 +95,20 @@ $(document).on("click", "#nav-hidden", openNav);
 
 
 var closeNav = function(){
-    console.log("test")
-    $(".ip-nav").css("display", "none");
+    $(".ip-nav").css("left", "100vw");
     $("#nav-open").attr("id", "nav-hidden");
 }
 
 $(document).on("click", "#nav-open", closeNav);
+
+function close(){
+    $(".ip-nav").css("left","100vw");
+    $("#nav-open").attr("id", "nav-hidden");
+}
+
+$(document).on("click",".link" , function (){
+    close();
+})
+
 
 

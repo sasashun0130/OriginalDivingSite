@@ -5,6 +5,10 @@
     /* outline: 2px red solid; */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100vw;
 }
@@ -714,24 +718,51 @@ nav li{
 
     .ham {
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 5vw;
+        right: 6vw;
+        z-index: 1000;
     }
 
     .ham span {
         display: block;
-        width: 20px;
-        height: 2px;
+        height: 0.5vw;
         background-color: white;
-        margin: 5px 0;
+        margin: 4vw 0;
+    }
+
+    .ham span:nth-child(1){
+        width: 12vw;
+        transition: 1s;
+    }
+    #nav-open span:nth-child(1){
+        transform: translateY(4.5vw) rotate(45deg);
+    }
+
+    .ham span:nth-child(2){
+        width: 9vw;
+        transition: 1.2s;
+    }
+    #nav-open span:nth-child(2){
+        opacity: 0;
+    }
+
+    .ham span:nth-child(3){
+        width: 6vw;
+        transition: 1s;
+    }
+    #nav-open span:nth-child(3){
+        transform: translate3d(3vw, -4.5vw,0) rotate(-45deg) scaleX(2);
     }
 
     .ip-nav{
-        display: none;
+        position: relative;
+        display: flex;
         background-color: #0F3653;
         width: 80%;
         height: 100%;
+        left: 100vw;
         margin: 0;
+        transition: 1s;
     }
 
     .ip-nav p {
@@ -792,14 +823,6 @@ nav li{
 
     nav a::after{
         height: 0.5px;
-    }
-
-    #sp-header{
-        width:100%;
-        background:#333;
-        color:#fff;
-        text-align: center;
-        padding: 20px;
     }
 
     .bg-switcher{
