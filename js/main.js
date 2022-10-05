@@ -86,12 +86,20 @@ $(window).on('load', function () {
     window.setTimeout(TextAnimeControl,5000);  //headerだけ5秒間遅れて表示
 });
 
-// $(".openbtn").click(function () {//ボタンがクリックされたら
-// 	$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
-//     $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
-// });
+var openNav = function(){
+    $(".ip-nav").css("display", "flex");
+    $("#nav-hidden").attr("id", "nav-open");
+}
 
-// $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
-//     $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
-//     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
-// });
+$(document).on("click", "#nav-hidden", openNav);
+
+
+var closeNav = function(){
+    console.log("test")
+    $(".ip-nav").css("display", "none");
+    $("#nav-open").attr("id", "nav-hidden");
+}
+
+$(document).on("click", "#nav-open", closeNav);
+
+

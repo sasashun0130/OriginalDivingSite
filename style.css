@@ -21,6 +21,10 @@ body {
     opacity: 0;
 }
 
+.ip-header {
+    display: none;
+}
+
 #sp-header{
     display: none;
 }
@@ -113,7 +117,7 @@ nav li{
 @keyframes blurAnime{
     from {
         filter: blur(10px);
-        transform: scale(1.02);
+        transform: scale(1);
         opacity: 0;
     }
 
@@ -694,22 +698,76 @@ nav li{
     #licence{
         overflow: hidden;
     }
-    
-    .headerTrigger{
-        height: 10vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+
+    .pc-header {
+        display: none;
+    }
+
+    .ip-header {
         position: fixed;
+        display: flex;
+        justify-content: end;
         width: 100vw;
-        background-color: rgba(0, 0, 0, 0.5);
+        height: 100vh;
         z-index: 999;
-        opacity: 0;
+    }
+
+    .ham {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .ham span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        margin: 5px 0;
+    }
+
+    .ip-nav{
+        display: none;
+        background-color: #0F3653;
+        width: 80%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .ip-nav p {
+        text-align: center;
+    }
+
+    .ip-nav ul{
+        margin-top: 3vh;
+    }
+
+    .ip-nav li{
+        margin-top: 2vh;
+    }
+
+    .ip-div {
+        height: 100%;
+        width: 10%;
+        background-color: #042D4C;
+    }
+
+    .ip-nav-contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .ip-header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .header-title{
         margin-left: 5vw;
-        font-size: 15px;
+        font-size: 20px;
         color: #ffffff;
         text-decoration: none;
         transition: 0.5s;
@@ -728,7 +786,7 @@ nav li{
         text-align: right;
         text-decoration: none;
         position: relative;
-        font-size: 12px;
+        font-size: 16px;
         margin: 0 2.5vw;
     }
 
@@ -1292,7 +1350,7 @@ nav li{
     
     .flow-left-comment h4 ,.flow-right-comment h4{
         width: 100%;
-        font-size: 16px;
+        font-size: 15px;
         text-align: center;
         margin-top: 2vw;
         font-weight: lighter;
@@ -1300,10 +1358,10 @@ nav li{
     
     .flow-left-comment p ,.flow-right-comment p{
         display: flex;
-        width: 70%;
+        width: 72%;
         margin: 3vw 0;
         line-height: 1rem;
-        font-size: 0.5rem;
+        font-size: 0.4rem;
     }
     
     .fuwatAnime {
