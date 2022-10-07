@@ -462,7 +462,7 @@ nav li{
     font-size: 18px;
     transition: 0.5s;
     margin-right: 5vw;
-    z-index: 900;
+    /* z-index: 900; */
 }
 
 .shop-link {
@@ -714,14 +714,14 @@ nav li{
         justify-content: end;
         width: 100vw;
         height: 100vh;
-        z-index: 999;
+        z-index: 0;
     }
 
     .ham {
         position: absolute;
         top: 5vw;
         right: 6vw;
-        z-index: 1000;
+        z-index: 999;
     }
 
     .ham span {
@@ -764,6 +764,7 @@ nav li{
         left: 100vw;
         margin: 0;
         transition: 1s;
+        z-index: 100;
     }
 
     .ip-nav p {
@@ -833,6 +834,7 @@ nav li{
         background-size: cover;
         position: relative;
         color: #ffffff;
+        z-index: -1;
     }
     
     .title{
@@ -864,6 +866,35 @@ nav li{
         position: relative;
         bottom: 6vw;
     }
+    .title2{
+        position: absolute;
+        font-size: 36px;
+        writing-mode:vertical-rl;
+        text-align: left;
+        bottom: 80vw;
+        left: 15vw;
+        font-weight: lighter;
+    }
+
+    .title2 span{
+        padding-top: 20vh;
+    }
+    
+    .scroll2{
+        font-size: 18px;
+        position: absolute;
+        transform:rotate(90deg);
+        bottom: 15vw;
+        left: 55vw;
+    }
+    
+    .scroll2 span{
+        display: inline-block;
+        width: 50vw;
+        border-bottom: solid 1.5px #ffffff;
+        position: relative;
+        bottom: 6vw;
+    }
     
     #about{
         background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)) ,url(images/about.jpg);
@@ -873,6 +904,7 @@ nav li{
         justify-content: end;
         align-items: center;
         padding-right: 40px;
+        z-index: -1;
     }
     
     .about-text{
@@ -1078,7 +1110,7 @@ nav li{
         text-decoration: none;
         letter-spacing: 0.1em;
         transition: 0.5s;
-        z-index: 900;
+        /* z-index: 1000; */
     }
     
     .licence-comment a:hover{
@@ -1189,6 +1221,7 @@ nav li{
         font-size: 18px;
         transition: 0.5s;
         margin-right: 10vw;
+        /* z-index: 1000; */
     }
     
     .shop a:hover{

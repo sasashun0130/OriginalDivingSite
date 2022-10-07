@@ -88,6 +88,7 @@ $(window).on('load', function () {
 
 var openNav = function(){
     $(".ip-nav").css("left", "0vw");
+    $(".ip-header").css("z-index","100");
     $("#nav-hidden").attr("id", "nav-open");
 }
 
@@ -96,6 +97,7 @@ $(document).on("click", "#nav-hidden", openNav);
 
 var closeNav = function(){
     $(".ip-nav").css("left", "100vw");
+    $(".ip-header").css("z-index","0");
     $("#nav-open").attr("id", "nav-hidden");
 }
 
@@ -103,6 +105,7 @@ $(document).on("click", "#nav-open", closeNav);
 
 function close(){
     $(".ip-nav").css("left","100vw");
+    $(".ip-header").css("z-index","0");
     $("#nav-open").attr("id", "nav-hidden");
 }
 
