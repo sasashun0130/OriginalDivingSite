@@ -707,6 +707,10 @@ nav li{
         overflow: hidden;
     }
 
+    #spot-sp{
+        overflow: hidden; 
+    }
+
     .pc-header {
         display: none;
     }
