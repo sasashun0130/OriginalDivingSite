@@ -25,7 +25,10 @@ body {
     opacity: 0;
 }
 
-.ip-header {
+.ip-header{
+    display: none;
+}
+.ham{
     display: none;
 }
 
@@ -715,13 +718,15 @@ nav li{
         width: 100vw;
         height: 100vh;
         z-index: 0;
+        transition: 1.5s;
     }
 
     .ham {
-        position: absolute;
+        display: block;
+        position: fixed;
         top: 5vw;
         right: 6vw;
-        z-index: 999;
+        z-index: 9999;
     }
 
     .ham span {
@@ -764,7 +769,7 @@ nav li{
         left: 100vw;
         margin: 0;
         transition: 1s;
-        z-index: 100;
+        /* z-index: 999; */
     }
 
     .ip-nav p {
@@ -790,6 +795,7 @@ nav li{
         flex-direction: column;
         justify-content: center;
         width: 90%;
+        /* z-index: 999; */
     }
 
     .ip-header ul {
@@ -1111,7 +1117,7 @@ nav li{
         text-decoration: none;
         letter-spacing: 0.1em;
         transition: 0.5s;
-        /* z-index: 1000; */
+        z-index: 9999;
     }
     
     .licence-comment a:hover{
