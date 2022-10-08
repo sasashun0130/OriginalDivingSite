@@ -936,6 +936,7 @@ nav li{
         background-color: #042D4D;
         justify-content: center;
         align-items: center;
+        /* z-index: 0; */
     }
     
     .left-title h2{
@@ -984,7 +985,6 @@ nav li{
         height: 40vw;
         border: solid 1px #FFAB1A;
         top: 38vw;
-        z-index: 0;
     }
     
     .spot-left img, .spot-right img {
@@ -1083,6 +1083,7 @@ nav li{
         display: flex;
         flex-direction: column;
         position: relative;
+        /* z-index: 0; */
     }
     
     .licence-arrow{
@@ -1205,6 +1206,7 @@ nav li{
         flex-direction: column;
         align-items: center;
         background-color: #032743;
+        z-index: 0;
     }
     
     
@@ -1221,7 +1223,6 @@ nav li{
         font-size: 18px;
         transition: 0.5s;
         margin-right: 10vw;
-        /* z-index: 1000; */
     }
     
     .shop a:hover{
